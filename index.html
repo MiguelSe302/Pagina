@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Negocio - Formulario de Productos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #ffdfde url('https://cdn.pixabay.com/photo/2021/03/12/08/51/shorturl-6089108_1280.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff007f;
+            font-family: 'cursive';
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #333;
+            font-family: 'cursive';
+        }
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ff007f;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #333;
+        }
+        button {
+            background-color: #ff007f;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #d6006b;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h1>Tu Negocio - Formulario de Productos</h1>
+
+        <!-- Información del Cliente -->
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <!-- Productos más Demandados -->
+        <h2>Productos más Demandados:</h2>
+
+        <!-- Producto 1 -->
+        <label for="producto1">Nombre del Producto 1:</label>
+        <input type="text" id="producto1" name="producto1" required>
+
+        <label for="razon1">Razón por la que es tu favorito:</label>
+        <textarea id="razon1" name="razon1" rows="4" required></textarea>
+
+        <label for="imagen1">Imagen del Producto 1 (enlace):</label>
+        <input type="url" id="imagen1" name="imagen1" required>
+
+        <!-- Producto 2 -->
+        <label for="producto2">Nombre del Producto 2:</label>
+        <input type="text" id="producto2" name="producto2" required>
+
+        <label for="razon2">Razón por la que es tu favorito:</label>
+        <textarea id="razon2" name="razon2" rows="4" required></textarea>
+
+        <label for="imagen2">Imagen del Producto 2 (enlace):</label>
+        <input type="url" id="imagen2" name="imagen2" required>
+
+        <!-- Producto 3 -->
+        <label for="producto3">Nombre del Producto 3:</label>
+        <input type="text" id="producto3" name="producto3" required>
+
+        <label for="razon3">Razón por la que es tu favorito:</label>
+        <textarea id="razon3" name="razon3" rows="4" required></textarea>
+
+        <label for="imagen3">Imagen del Producto 3 (enlace):</label>
+        <input type="url" id="imagen3" name="imagen3" required>
+
+        <!-- Comentarios Adicionales -->
+        <h2>Comentarios Adicionales:</h2>
+        <label for="comentarios">¿Hay algún otro producto que te gustaría mencionar?</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+        <!-- Consentimiento -->
+        <h2>Consentimiento:</h2>
+        <label>
+            <input type="checkbox" name="consentimiento" required>
+            Acepto recibir correos electrónicos promocionales relacionados con los productos y ofertas.
+        </label>
+
+        <!-- Enviar Formulario -->
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
